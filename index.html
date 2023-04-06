@@ -109,6 +109,8 @@
 	</nav>
 	<style>
 	</style>
+	<!-- Button trigger modal -->
+
 	<!-- TRANG TRU -->
 	<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/AnhNenDau1.jpg);" data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
@@ -127,14 +129,13 @@
 			</div>
 		</div>
 	</header>
-
 	<div id="fh5co-couple">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
 					<h2>Lễ Thành Hôn!</h2>
 					<h3>29/04/2023 & 06/05/2023</h3>
-					<p>Chúng tôi mời bạn đến ăn mừng đám cưới của chúng tôi</p>
+					<p>Thân mời bạn đến dự tiệc cưới của chúng tôi</p>
 				</div>
 			</div>
 			<div class="couple-wrap animate-box">
@@ -144,7 +145,7 @@
 					</div>
 					<div class="desc-groom">
 						<h3>Tuấn Ba</h3>
-						<p>Gặp được nhau đã là duyên, đi qua đời nhau đã là định mệnh. cảm ơn đời đã mang đến bên anh người con gái anh yêu hơn tổng thể. Đây mãi là món quà ý nghĩa nhất mà đời sống đã dành Tặng Kèm đến anh. Yêu em, và yêu em rất nhiều – điều tuyệt vời của cuộc sống anh</p>
+						<p>Gặp được nhau đã là duyên, đi qua đời nhau đã là định mệnh. Cảm ơn đời đã mang đến bên anh người con gái anh yêu hơn tổng thể. Đây mãi là món quà ý nghĩa nhất mà đời sống đã dành đến anh. Yêu em, và yêu em rất nhiều – điều tuyệt vời của cuộc sống anh</p>
 					</div>
 				</div>
 				<p class="heart text-center"><i class="icon-heart2"></i></p>
@@ -160,58 +161,6 @@
 			</div>
 		</div>
 	</div>
-	<!-- <div id="fh5co-event" class="fh5co-bg" style="background-image:url(images/anh\ so\ 1.jpg);">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-					<span>Sự kiện đặc biệt của chúng tôi</span>
-					<h2>Sự Kiện Đám Cưới</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="display-t">
-					<div class="display-tc">
-						<div class="col-md-10 col-md-offset-">
-							<div class="col-md-6 col-sm-6 text-center">
-								<div class="event-wrap animate-box">
-									<h3>Lễ Cưới Nhà Gái</h3>
-									<div class="event-col">
-										<i class="icon-clock"></i>
-										<span>10:30</span>
-										<span>12:00</span>
-									</div>
-									<div class="event-col">
-										<i class="icon-calendar"></i>
-										<span>Thứ 7 29</span>
-										<span>Tháng 4, 2023</span>
-									</div>
-									<p> <a href ="https://goo.gl/maps/RSYM8sM1t9CcGjWx9">  Trung tâm tổ chức sự kiện Royal Palace - Sảnh hoàng Gia - Hội trường Hoàng gia Pháp</a></p>
-								</div>
-							</div>
-							<div class="col-md-6 col-sm-6 text-center">
-								<div class="event-wrap animate-box">
-									<h3>Lễ Cưới Nhà Trai</h3>
-									<div class="event-col">
-										<i class="icon-clock"></i>
-										<span>10:30</span>
-										<span>12:00</span>
-									</div>
-									<div class="event-col">
-										<i class="icon-calendar"></i>
-										<span>Thứ 7, 06</span>
-										<span>Tháng 5, 2023</span>
-									</div>
-									<p> <a href ="https://goo.gl/maps/8fd2xYyJSEZYckvg6">Km 58 - Quốc Lộ 2 Đường Tuyên Quang -Huyện Hàm Yên - Tỉnh Tuyên Quang </a></p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div> -->
-
 	<div id="fh5co-event" class="fh5co-bg" style="background-image:url(images/anh\ so\ 1.jpg);">
 		<div class="overlay"></div>
 		<div class="container">
@@ -432,7 +381,7 @@
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
 					<h2>We Offer Services</h2>
-					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+					<p>Mời mọi người cùng xem video và album ảnh cưới của tụi mình, tất cả hình ảnh và video chúng mình đã chọn lựa kỹ càng</p>
 				</div>
 			</div>
 
@@ -731,6 +680,7 @@
 		{
 			var vars = [], hash;
 			var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+			console.log(window.location.href.slice(window.location.href.indexOf('?') + 1))
 			for(var i = 0; i < hashes.length; i++)
 			{
 				hash = hashes[i].split('=');
@@ -739,15 +689,53 @@
 			}
 			return vars;
 		}
+		function getQueryParamValue(url, paramName) {
+	
+			
+				var query = url.split("?")[1];
+				var params = query.split("&");
+				for (var i = 0; i < params.length; i++) {
+					var param = params[i].split("=");
+					if (param[0] == paramName) {
+					return decodeURIComponent(param[1]);
+					}
+				}
+				return '';
+		}
 	$(function(){
 		var toName = getUrlVars()["to"];
 		if(toName == undefined){
 			toName = '';
 		}
+		if(window.location.href.indexOf("?") ==-1){
+		   var toNoiMoi = 'Gia đình hai chúng tôi'
+		}
+		else
+		{
+			var currentUrl = window.location.href;
+			var toNoiMoi = getQueryParamValue(currentUrl,"from");
+			if(toNoiMoi == undefined){
+				toNoiMoi = 'Gia đình hai chúng tôi';
+			}
+			else if(toNoiMoi == '')
+			{
+				toNoiMoi = 'Gia đình hai chúng tôi';
+			}
+			else if(toNoiMoi.toUpperCase() == 'NHÀ TRAI')
+			{
+				toNoiMoi = 'Gia Đình Nhà Trai';
+			}
+			else if(toNoiMoi.toUpperCase() == 'NHÀ GÁI')
+			{
+				toNoiMoi = 'Gia Đình Nhà Gái';
+			}
+		}
 		const decodedURL = decodeURI(toName);
+		const decodedURLMoi = decodeURI(toNoiMoi)
 		$('#to-my-friend').text(decodedURL);
 		$('#to-my-friend2').text(decodedURL);
 		$('#to-my-friend2').text(decodedURL);
+		$('#to-my-NoiDen').text(decodedURLMoi);
 		$('#myModal').modal();
 	})
   </script>
@@ -756,18 +744,18 @@
 		<div class="modal-dialog" role="document">
 
 		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 			
-			</div>
 			<div class="modal-body">
 				<div class="text-head">From: Gia đình nhỏ Tuấn Ba ❤ Trâm Anh</div>
 				<div class="d-flex">
 					<img class="iamge-modal" src="images/modal-image.png" alt="">
 				</div>
-				<div class="text-bottom">Trân trọng kính mời <strong id="to-my-friend"></strong></div>
+				<!-- <div class="text-bottom">Trân trọng kính mời <strong id="to-my-friend"> tới dự hôn lễ của chúng tôi tại </strong></div> -->
+				<div class="text-bottom">Trân trọng kính mời <strong id="to-my-friend"> </strong> <br> Tới dự hôn lễ của chúng tôi tại <strong id="to-my-NoiDen"> </strong></div>
+				<div class="modal-header">
+				 	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> 
+				</div>
 			</div>
-		
 		</div>
 		</div>
 	</div>
@@ -779,7 +767,7 @@
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 			</div>
 			<div class="modal-body">
-				<div class="text-head">Trân trọng cảm ơn <strong id="to-my-friend2"> </strong> đã đăng ký tham dự lễ thành hôn của chúng tôi </div>
+				<div class="text-head">Trân trọng cảm ơn <strong id="to-my-friend2"> </strong> <br> Đã đăng ký tham dự lễ thành hôn của chúng tôi </div>
 			</div>
 		</div>
 		</div>
@@ -792,7 +780,7 @@
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 			</div>
 			<div class="modal-body">
-				<div class="text-bottom">Số điện thoại chú rể <strong>0917.232.111</strong></div>
+				<div class="text-bottom">Số điện thoại chú rể <strong> <br> 0917.232.111</strong></div>
 			</div>
 		</div>
 		</div>
@@ -804,7 +792,7 @@
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 			</div>
 			<div class="modal-body">
-				<div class="text-bottom">Số điện thoại cô dâu <strong>0968.161.750</strong></div>
+				<div class="text-bottom">Số điện thoại cô dâu <strong> <br> 0968.161.750</strong></div>
 			</div>
 		</div>
 		</div>
